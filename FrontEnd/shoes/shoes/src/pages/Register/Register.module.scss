@@ -1,0 +1,143 @@
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #f3f3f3;
+    display: flex;
+    align-items: center;
+}
+
+.login-container {
+    width: 450px;
+    height: 650px;
+    margin: auto;
+    background-color: white;
+    z-index: 1;
+    font-size: 18px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 5px #ccc;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 0;
+}
+
+.login-header{
+    
+}
+.title{
+    text-align: center;
+    color: #7363eb;
+}
+.title-icon{
+    display: flex;
+    margin-left: 140px;
+}
+
+.icon-face,
+.icon-google,
+.icon-linked{
+    border: 1px solid #f0f0f0;
+    width: 40px;
+    display: flex;
+    justify-content:center;
+    padding: 10px 0;
+    border-radius: 50%;
+}
+
+.icon-face{
+    margin: 0 10px;
+}
+.icon-google{
+    margin: 0 10px;
+}
+.icon-linked{
+    margin: 0 10px;
+}
+
+.text-enter{
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.login-body{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-email,
+.input-password{
+    width: 280px;
+    height: 38px;
+    margin-left: 80px;
+    padding-left: 20px;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    background-color: #f0f0f0;
+    color: #a8a8a8;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.input-email{
+    
+}
+.input-password{
+
+}
+.sign-up-contain{
+    display: flex;
+    flex-direction: row;
+}
+.sign-up-note{
+    margin-left: 85px;
+    margin-bottom: 6px;
+}
+.sign-up-link{
+    text-decoration: none;
+    color: #d88ba9;
+    margin-top: 18px;
+    margin-left: 6px;
+}
+
+.input-empty{
+    color: red;
+    margin-left: 82px;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.sign-in-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    text-decoration: none;
+    color: #d88ba9;
+}
+
+.sucess-register{
+    color: #d88ba9;
+    margin-left: 95px;
+}
+
+.faild-register{
+    color: red;
+    margin: 0 50px 0 60px;
+}
+
+
+
+// .helo{
+//     color: red;
+// }

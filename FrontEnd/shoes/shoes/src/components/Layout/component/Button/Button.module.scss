@@ -1,0 +1,45 @@
+.wraper {
+    min-width: 100px;
+    padding: 9px 16px;
+    border-radius: 4px;
+    font-size: 1.6rem;
+    background-color: red;
+}
+
+
+
+.submit{
+    width: 200px;
+    height: 40px;
+    margin-left: 125px;
+    background-image: linear-gradient(90deg, #9e78c3,#d489a8);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: 550;
+    font-size: 15px;
+    cursor: pointer;
+    
+}
+
+.submitLink,
+.submitButton:hover{
+    opacity: 0.9;
+}
+
+// .submitLink{
+//     display: flex;
+//     width: 200px;
+//     height: 40px;
+//     margin-left: 125px;
+//     background-image: linear-gradient(90deg, #9e78c3,#d489a8);
+//     border: none;
+//     border-radius: 20px;
+//     color: white;
+//     font-weight: 550;
+//     font-size: 15px;
+//     cursor: pointer;
+//     text-decoration: none;
+//     justify-content: center;
+//     align-items: center;
+// }

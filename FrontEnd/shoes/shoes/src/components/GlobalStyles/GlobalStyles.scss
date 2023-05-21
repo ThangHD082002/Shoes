@@ -1,0 +1,129 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --white-color : #fff;
+    --black-color : #000;
+    --text-color : #333;
+    --primary-color : #303030;
+    --border-color: #dbdbdb;
+
+    --header-height: 180px;
+    --navbar-height: 50px;
+    --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
+}
+
+.grid {
+    width: 1300px;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.grid-confirm{
+    width: 550px;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    margin-top: 55px;
+}
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.grid__colum-2-12{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 16.667%;
+}
+
+.grid__colum-2-10{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+}
+
+.grid__colum-10-12{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 83.333%;
+}
+
+.grid__colum-third{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 33.33333%;
+}
+
+.grid__colum-half{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 50%;
+}
+
+.grid__colum-4-12{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 33.333%;
+}
+
+.grid__colum-8-12{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 66.667%;
+}
+
+.grid__colum-2-8-12{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 25%;
+}
+
+.grid__colum-4-8-12{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 50%;
+}
+
+.grid__row-cart{
+    padding: 20px 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+    height: 100%;
+}
+
+button,
+input,
+[tabindex]{
+    outline: none;
+    border: none;
+}
+
+a[href]{
+    text-decoration: none;
+}
+
+.d{
+    background-color: white;
+    padding-left: 20px;
+    margin: 20px 0;
+    border-radius: 4px;
+    position: relative;
+}

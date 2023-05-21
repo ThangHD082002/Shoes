@@ -1,0 +1,47 @@
+.side-bar{
+    background-color: white;
+
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    margin: 0px 0;
+}
+
+.heading-icon{
+    padding-left: 25px;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+.heading-name{
+    margin: 5px 5px;
+    margin-top: 20px;
+}
+
+.list{
+    list-style: none;
+    margin: 0px 0 30px 22px;
+    padding-bottom: 10px;
+}
+
+.item{
+    margin: 8px 0;
+}
+
+.item-link{
+    right: 0;
+    transition: right linear 0.2s;
+    font-weight: 550;
+    color: #000;
+
+    
+}
+
+.item-link:hover{
+    right: -4px;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
