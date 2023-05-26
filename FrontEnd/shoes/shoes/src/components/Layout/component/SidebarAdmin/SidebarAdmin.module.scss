@@ -1,0 +1,55 @@
+.sidebar-contain{
+    height: 130%;
+    width: 100%;
+    background-color: #3f5289;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu{
+    color: #fff ;
+}
+
+.menu-title{
+    margin-left: 20px;
+}
+
+.menu-list{
+    list-style: none;
+}
+
+.menu-item{
+    margin: 25px 0;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.menu-item:hover{
+    opacity: 1;
+}
+
+
+.menu-item-link{
+    color: white;
+}
+
+.menu-icon{
+
+}
+
+.footer{
+    position:absolute;
+    bottom:20px;
+    background-color: #3e5a91;
+    padding-right: 20px;
+    left: 15px;
+    border-radius: 4px;
+}
+
+.footer-text{
+    margin-left: 24px;
+}

@@ -1,5 +1,6 @@
 package shoesbackend.com.shoesbackend.model;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Set;
 
@@ -17,6 +18,7 @@ import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
+import jakarta.persistence.PrePersist;
 import jakarta.persistence.Table;
 
 import lombok.*;
@@ -39,6 +41,10 @@ public class OrderDetail {
     private User user;
 
     @ManyToOne
+    @JoinColumn(name = "order_id",nullable = false)
+    private Orders orders;
+
+    @ManyToOne
     @JoinColumn(name = "product_id",nullable = false)
     private Product product;
 
@@ -48,14 +54,33 @@ public class OrderDetail {
     @Column(name = "price")
     private double price;
 
-    @Column(name = "size")
-    private String size;
+    @ManyToOne
+    @JoinColumn(name = "size_id",nullable = false)
+    private Size size;
+
+    @ManyToOne
+    @JoinColumn(name = "color_id",nullable = false)
+    private Color color;
 
     @Column(name = "address")
     private String address;
 
     @Column(name = "phone")
     private String phone;
+
+    @Column(name = "name")
+    private String name;
+
+    @Column(name = "status")
+    private StatusOrderDetail sod;
+
+    @Column(name = "date_create_order_detail")
+    private LocalDate dateCreated;
+
+    @PrePersist
+    public void createAt(){
+        this.dateCreated = LocalDate.now();
+    }
 
 
 

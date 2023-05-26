@@ -5,10 +5,10 @@
     --white-color : #fff;
     --black-color : #000;
     --text-color : #333;
-    --primary-color : #303030;
+    --primary-color : #f15e2c;
     --border-color: #dbdbdb;
 
-    --header-height: 180px;
+    --header-height: 200px;
     --navbar-height: 50px;
     --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
 }
@@ -18,6 +18,13 @@
     max-width: 100%;
     margin: 0 auto;
     height: 100%;
+}
+
+.grid-admin {
+    width: 1600px;
+    max-width: 100%;
+    height: 100%;
+    margin-right: 0;
 }
 
 .grid-confirm{
@@ -126,4 +133,298 @@ a[href]{
     margin: 20px 0;
     border-radius: 4px;
     position: relative;
+}
+
+
+
+@keyframes showNotifyGrowth{
+    from{
+        opacity: 0;
+        transform: scale(0);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.show-admin-user-block{
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    top: 68px;
+    right: 35px;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.5);
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    animation: showNotifyGrowth ease-in 0.2s;
+    
+}
+
+.female-manager{
+    margin: 0 ;
+    display: block;
+    background-color: #e6f7f5;
+    width: 40px;
+    border-radius:  4px;
+    color: #0ab39c;
+    font-size: 12px;
+    font-weight: 550;
+    padding-left: 10px;
+}
+
+.male-manager{
+    margin: 0 ;
+    display: block;
+    background-color: #fdefec;
+    width: 50px;
+    border-radius:  4px;
+    color: #f26748;
+    font-size: 12px;
+    font-weight: 550;
+    padding-left: 10px;
+}
+
+
+.role-manager{
+    font-size: 12px;
+    margin: 0 ;
+    display: block;
+    background-color: #fef8ed;
+    width: 80px;
+    border-radius:  4px;
+    color: #f9be4b;
+    font-size: 12px;
+    font-weight: 550;
+    padding-left: 10px
+}
+
+.role-customer{
+    font-size: 12px;
+    margin: 0 ;
+    display: block;
+    background-color: #fef8ed;
+    width: 80px;
+    border-radius:  4px;
+    color: #f9be4b;
+    font-size: 12px;
+    font-weight: 550;
+    padding-left: 10px
+}
+
+.role-employee{
+    font-size: 12px;
+    margin: 0 ;
+    display: block;
+    background-color: #e6f7f5;
+    width: 80px;
+    border-radius:  4px;
+    color: #0ab39c;
+    font-size: 12px;
+    font-weight: 550;
+    padding-left: 10px
+}
+
+.status-active{
+    margin: 0 ;
+    display: block;
+    background-color: #e6f7f5;
+    width: 60px;
+    border-radius:  4px;
+    color: #0ab39c;
+    font-size: 12px;
+    font-weight: 550;
+    padding-left: 10px;
+}
+
+.status-disabled{
+    margin: 0 ;
+    display: block;
+    background-color: #fdefec;
+    width: 80px;
+    border-radius:  4px;
+    color: #f26748;
+    font-size: 12px;
+    font-weight: 550;
+    padding-left: 10px;
+}
+
+.status-wait{
+    margin: 0 ;
+    display: block;
+    background-color: #fef8ed;
+    width: 50px;
+    border-radius:  4px;
+    color: #f9be4b;
+    font-size: 12px;
+    font-weight: 550;
+    padding-left: 10px;
+}
+
+.status-wait-my{
+    margin: 30px 0 15px 15px;
+    display: block;
+    background-color: #fef8ed;
+    width: 50px;
+    border-radius:  4px;
+    color: #f9be4b;
+    font-size: 12px;
+    font-weight: 550;
+    padding-left: 10px;
+}
+
+.status-confirm{
+    margin: 0 ;
+    display: block;
+    background-color: #e6f7f5;
+    width: 68px;
+    border-radius:  4px;
+    color: #0ab39c;
+    font-size: 12px;
+    font-weight: 550;
+    padding-left: 10px;
+}
+
+.status-confirm-my{
+    margin: 30px 0 15px 15px;
+    display: block;
+    background-color: #e6f7f5;
+    width: 68px;
+    border-radius:  4px;
+    color: #0ab39c;
+    font-size: 12px;
+    font-weight: 550;
+    padding-left: 10px;
+}
+
+.status-canceled{
+    margin:0;
+    display: block;
+    background-color: #fdefec;
+    width: 80px;
+    border-radius:  4px;
+    color: #f26748;
+    font-size: 12px;
+    font-weight: 550;
+    padding-left: 10px;
+}
+
+.status-canceled-my{
+    margin:   30px 0 15px 15px;;
+    display: block;
+    background-color: #fdefec;
+    width: 80px;
+    border-radius:  4px;
+    color: #f26748;
+    font-size: 12px;
+    font-weight: 550;
+    padding-left: 10px;
+}
+
+.total{
+    margin: 0 ;
+    display: block;
+    background-color: #fdefec;
+    width: 100px;
+    border-radius:  4px;
+    color: #f26748;
+    font-size: 12px;
+    font-weight: 550;
+    padding-left: 10px;
+    text-align: center;
+}
+
+
+
+
+
+
+.stocking{
+    margin: 0 ;
+    display: block;
+    background-color: #e6f7f5;
+    width: 100px;
+    border-radius:  4px;
+    color: #0ab39c;
+    font-size: 12px;
+    font-weight: 550;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.oustock{
+    margin: 0 ;
+    display: block;
+    background-color: #fdefec;
+    width: 100px;
+    border-radius:  4px;
+    color: #f26748;
+    font-size: 12px;
+    font-weight: 550;
+    padding-left: 10px;
+    text-align: center;
+}
+
+
+.action{
+    background-color: #eaf1fe;
+    color: #3577f1;
+    width: 35px;
+    height: 27px;
+    text-align: center;
+    border-radius: 4px;
+    position: relative;
+}
+
+.action-list{
+    list-style: none;
+    padding-left: 0;
+}
+
+.show-user-none{
+    display: none;
+}
+
+.show-user-block{
+    display: block;
+    list-style: none;
+    background-color: #fff;
+    margin-top: 5px;
+    border-radius: 3px;
+    padding: 0;
+    animation: showNotifyGrowth ease-in 0.1s;
+}
+
+// bo loc search admin
+
+.reset-search{
+    width: 130px;
+    height: 40px;
+    background-color: #ecedf3;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    padding-left: 10px;
+    color: #4073b5;
+    margin-right: 15px;
+
+}
+
+.reset-search:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+
+.action-item:hover{
+    cursor: pointer;
+    color: #3f5289;
+}
+
+.action-item{
+    margin: 5px 0;
 }

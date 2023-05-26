@@ -9,4 +9,6 @@ public interface ProductSizeService {
     void addProductSize(CreateProductSize cpSize);
     List<ProductSize> getProductSizeList();
     List<ProductSize> getProductSizeByProductId(int id);
+    List<ProductSize> getProductSizeFromIndex(int i);
+    List<ProductSize> getProductSizeByProductName(String name);
 }

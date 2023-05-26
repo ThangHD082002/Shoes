@@ -5,6 +5,7 @@ import java.security.spec.InvalidKeySpecException;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Optional;
@@ -22,12 +23,16 @@ import org.springframework.stereotype.Service;
 import jakarta.transaction.Transactional;
 import shoesbackend.com.shoesbackend.hash.Hashing;
 import shoesbackend.com.shoesbackend.model.Role;
+import shoesbackend.com.shoesbackend.model.StatusUser;
 import shoesbackend.com.shoesbackend.model.User;
 import shoesbackend.com.shoesbackend.repository.RoleRepository;
 import shoesbackend.com.shoesbackend.repository.UserRepository;
+import shoesbackend.com.shoesbackend.request.CreateUpdateUser;
 import shoesbackend.com.shoesbackend.request.CreateUser;
+import shoesbackend.com.shoesbackend.request.CreateUserByRole;
 import shoesbackend.com.shoesbackend.request.CreateUserRole;
 import shoesbackend.com.shoesbackend.request.LoginUser;
+import shoesbackend.com.shoesbackend.service.RoleService;
 import shoesbackend.com.shoesbackend.service.UserService;
 
 
@@ -42,10 +47,14 @@ public class UserServiceImpl implements UserService, UserDetailsService {
     @Autowired
     RoleRepository roleRepository;
 
+    @Autowired
+    RoleService rService;
+
     @Autowired Hashing hash;
 
     @Autowired
     private BCryptPasswordEncoder bcryptEncoder;
+
 
     private static final Logger logger = LoggerFactory.getLogger( UserService.class);
     
@@ -73,6 +82,9 @@ public class UserServiceImpl implements UserService, UserDetailsService {
             User u = new User();
             u.setUsername(cuser.getUsername());
             u.setHash_pass(hash.hashPassword(cuser.getPassword()));
+            u.setSu(StatusUser.Active);
+            u.setGender(cuser.getGender());
+            u.setPhone(cuser.getPhone());
             userRepository.save(u); 
             return true;    
         }
@@ -114,7 +126,39 @@ public class UserServiceImpl implements UserService, UserDetailsService {
         userRepository.save(u);
     }
 
-    
+    @Override
+    public List<User> getUserByRole(String role) {
+        Role r = rService.getRoleByName(role);
+        List<User> lu = r.getUsers();
+        return lu;
+    }
+
+    @Override
+    public List<User> getUserByRoleAndName(String username, String role) {
+        return userRepository.findByUsernameAndRole(username, role);
+    }
+
+    @Override
+    public Optional<User> getUserByRoleAndNameOne(String username, String role) {
+        return userRepository.findByUsernameAndRoleOne(username, role);
+    }
+
+    @Override
+    public void UpdateUser(CreateUpdateUser cuu) {
+        Optional<User> u = userRepository.findByUsernameAndRoleOne(cuu.getUsername(),cuu.getRoleOld());
+        User user = u.get();
+        user.setUsername(cuu.getUsername());
+        user.setPhone(cuu.getPhone());
+        user.setGender(cuu.getGender());
+        StatusUser su = StatusUser.valueOf(cuu.getStatus());
+        user.setSu(su);
+        Optional<Role> role = roleRepository.findByName(cuu.getRole());
+        Role r = role.get();
+        List<Role> lr = new ArrayList<Role>();
+        lr.add(r);
+        user.setRoles(lr);
+        userRepository.save(user);
+    }    
 
    
     

@@ -1,0 +1,23 @@
+.role-contain{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #f9fbfd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.role-back-link{
+    position: absolute;
+    right: 45%;
+    display: block;
+    color: #fff;
+    font-size:25px;
+    font-weight: 550;
+    display: block;
+    width: 128px;
+    padding-left: 10px;
+    background-color: red;
+    border-radius: 4px;
+}

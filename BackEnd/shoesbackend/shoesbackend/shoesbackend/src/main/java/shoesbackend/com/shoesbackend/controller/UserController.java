@@ -4,6 +4,7 @@ import java.security.NoSuchAlgorithmException;
 import java.security.spec.InvalidKeySpecException;
 import java.text.ParseException;
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -13,7 +14,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import shoesbackend.com.shoesbackend.model.User;
+import shoesbackend.com.shoesbackend.request.CreateUpdateUser;
 import shoesbackend.com.shoesbackend.request.CreateUser;
+import shoesbackend.com.shoesbackend.request.CreateUserByRole;
 import shoesbackend.com.shoesbackend.request.LoginUser;
 import shoesbackend.com.shoesbackend.response.StatusResponse;
 import shoesbackend.com.shoesbackend.service.UserService;
@@ -64,6 +67,28 @@ public class UserController {
         
         
     } 
+
+    @GetMapping("/users-by-role")
+    public List<User> getUserByRole(@RequestParam String role){
+        return userService.getUserByRole(role);
+    }
+
+    @GetMapping("/user-by-username-and-role")
+    public List<User> getUserByUsernameAndRole(@RequestParam String username, @RequestParam String role){
+        return userService.getUserByRoleAndName(username, role);
+    }
+
+    @GetMapping("/user-by-username-and-role-one")
+    public List<User> getUserByUsernameAndRoleOne(@RequestParam String username, @RequestParam String role){
+        return userService.getUserByRoleAndName(username, role);
+    }
+
+    @PostMapping("/update-user")
+    public ResponseEntity<Object> updateUser(@RequestBody CreateUpdateUser cuu){
+        userService.UpdateUser(cuu);
+        return new ResponseEntity<Object>(new StatusResponse("update thành công"), HttpStatus.OK);
+
+    }
 
     // @GetMapping("/test")
     // public String getTest(){

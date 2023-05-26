@@ -1,5 +1,5 @@
 package shoesbackend.com.shoesbackend.model;
 
-public class StatusOrderDetail {
-    
+public enum StatusOrderDetail {
+    Wait, Confirm, Transporting, Delivered, Canceled
 }

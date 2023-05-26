@@ -108,10 +108,12 @@
 .header{
     height: var(--header-height);
     background: linear-gradient(-180deg,#f53d2d,#f63);
+    position: relative;
 }
 
 .header-menu{
     height: 50px;
+    margin-top: 40px;
 }
 
 .header-navbar{
@@ -131,6 +133,12 @@
 .navbar-item-link{
     margin: 0 18px;
     cursor: pointer;
+    color: white;
+}
+
+.navbar-item-link:hover{
+    cursor: pointer;
+    opacity: 0.8;
 }
 
 .icon{
@@ -291,6 +299,78 @@
 .slice-free{
     text-decoration: none;
     color: var(--text-color);
+}
+
+// user
+
+.navbar-login{
+    position: absolute;
+    right: 20px;
+}
+
+.email-title{
+    margin: 0 0 0 0;
+    display: block;
+    background-color: #fff;
+    border-radius: 3px; 
+    padding-left: 15px;
+    cursor: pointer;
+    font-weight: 550;
+}
+
+.email-title:hover{
+    color: var(--primary-color);
+}
+
+.user-icon{
+    margin-left: 8px;
+    margin-top: 2px;
+}
+
+.user-list{
+    list-style: none;
+    background-color: #fff;
+    margin-top: 5px;
+    border-radius: 3px;
+    padding: 0;
+}
+
+.user-item{
+    padding: 6px 0 6px 10px;
+    border-radius: 3px;
+    
+}
+
+.user-item:hover{
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.user-item-link{
+    background-color: #fff;
+    font-weight: 550;
+    height: 100%;
+    width: 100%;
+}
+
+.user-login{
+    display: block;
+    background-color: #fff; 
+    position: absolute; 
+    right: 20px;
+    top: 8px;
+    padding: 5px 5px;
+    border-radius: 2px;
+    font-weight: 550;
+}
+
+.user-login:hover{
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+.login-icon{
+    color: #1b1968;
 }
 
 

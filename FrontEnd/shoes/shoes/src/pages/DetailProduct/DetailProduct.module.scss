@@ -1,3 +1,71 @@
+.detail{
+    position: relative;
+}
+
+@keyframes showNotifyGrowth{
+    from{
+        opacity: 0;
+        transform: scale(0);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.notify-success{
+    background-color: #fff;
+    width: 360px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 4%;
+    left: 38%;
+    padding-top: 15px;
+    font-weight: 550;
+    padding-left: 10px;
+    border-radius: 8px;
+    color: #0ab39c;
+    box-shadow:  0 5px 10px #1e20251f;
+    animation: showNotifyGrowth ease-in 0.2s;
+
+}
+.success-icon{
+    color: green;
+}
+.success-name{
+
+}
+
+
+.notify-faild{
+    background-color: #fff;
+    width: 360px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 4%;
+    left: 38%;
+    padding-top: 15px;
+    font-weight: 550;
+    padding-left: 10px;
+    border-radius: 8px;
+    color: #ff004c;
+    box-shadow:  0 5px 10px #1e20251f;
+    animation: showNotifyGrowth ease-in 0.2s;
+}
+
+.success-name{
+    margin-bottom: 30px;
+}
+.faild-icon{
+    color: red;
+}
+.faild-name{
+}
+
 .img-title{
     margin-top: 30px;
 }

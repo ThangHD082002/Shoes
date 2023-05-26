@@ -76,6 +76,9 @@ public class SecurityConfig {
                         .requestMatchers("/list/**").permitAll()
                         .requestMatchers("/id/product/**").permitAll()
                         .requestMatchers("/infor/product/**").permitAll()
+                        .requestMatchers("/update/order-detail-status/**").permitAll()
+                        .requestMatchers("/update-user/**").permitAll()
+
                         .anyRequest().authenticated()
                 )
                 .exceptionHandling().authenticationEntryPoint(jwtAuthenticationEntryPoint).and()

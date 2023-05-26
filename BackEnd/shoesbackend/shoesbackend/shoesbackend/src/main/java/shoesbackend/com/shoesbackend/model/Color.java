@@ -36,4 +36,8 @@ public class Color {
     @OneToMany(cascade = CascadeType.ALL,mappedBy = "color")
     @JsonIgnore
     private List<ProductSize> productSizes;
+
+    @OneToMany(cascade = CascadeType.ALL,mappedBy = "color")
+    @JsonIgnore
+    private List<OrderDetail> orderDetails ;
 }

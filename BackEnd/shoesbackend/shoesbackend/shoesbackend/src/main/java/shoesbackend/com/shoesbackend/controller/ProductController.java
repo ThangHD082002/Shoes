@@ -45,6 +45,11 @@ public class ProductController {
         return productService.getProductById(ma);
     }
 
+    @GetMapping("/name/product")
+    public List<Product> getProductByName(@RequestParam String name){
+        return productService.findByName(name);
+    }
+
 
 
     @PostMapping("/add/product")
@@ -58,6 +63,11 @@ public class ProductController {
         int ma = Integer.parseInt(id);
         productService.deleteProduct(ma);
         return new ResponseEntity<Object>(new StatusResponse( "delete product success"), HttpStatus.OK);
+    }
+
+    @GetMapping("/list/ten-product")
+    public List<Product> getProductFromId(@RequestParam int i){
+        return productService.findIndex(i);
     }
 
 }

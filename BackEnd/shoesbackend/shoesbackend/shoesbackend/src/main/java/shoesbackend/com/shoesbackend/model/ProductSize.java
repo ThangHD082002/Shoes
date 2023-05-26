@@ -44,4 +44,7 @@ public class ProductSize {
 
     @Column(name = "quantity_bunker")
     private int quantity_bunker;
+
+    @Column(name = "status")
+    private StatusProduct sp;
 }

@@ -14,4 +14,6 @@ import lombok.Setter;
 public class CreateUser {
     private String username;
     private String password;
+    private String phone;
+    private String gender;
 }

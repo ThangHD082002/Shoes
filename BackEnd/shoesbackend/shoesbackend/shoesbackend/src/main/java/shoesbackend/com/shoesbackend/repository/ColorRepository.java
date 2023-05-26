@@ -6,4 +6,5 @@ import shoesbackend.com.shoesbackend.model.Color;
 
 public interface ColorRepository extends JpaRepository<Color, Integer> {
     Color findById(int id);
+    Color findByName(String name);
 }

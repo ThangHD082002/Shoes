@@ -11,7 +11,7 @@
 
 .login-container {
     width: 450px;
-    height: 650px;
+    height: 800px;
     margin: auto;
     background-color: white;
     z-index: 1;
@@ -75,7 +75,8 @@ body {
 }
 
 .input-email,
-.input-password{
+.input-password,
+.input-phone{
     width: 280px;
     height: 38px;
     margin-left: 80px;
@@ -136,8 +137,19 @@ body {
     margin: 0 50px 0 60px;
 }
 
+.gender-contain{
+    margin-left:136px;
+    margin-top: 10px;
+}
 
+.male{
+    margin-right: 40px;
+    margin-left: 10px;
+}
 
+.checkbox{
+    margin-right: 5px;
+}
 // .helo{
 //     color: red;
 // }

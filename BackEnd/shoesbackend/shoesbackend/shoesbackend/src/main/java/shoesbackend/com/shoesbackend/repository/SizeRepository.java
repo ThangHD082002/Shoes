@@ -6,4 +6,5 @@ import shoesbackend.com.shoesbackend.model.Size;
 
 public interface SizeRepository extends JpaRepository<Size, Integer> {
     Size findById(int id);
+    Size findByName(String name);
 }

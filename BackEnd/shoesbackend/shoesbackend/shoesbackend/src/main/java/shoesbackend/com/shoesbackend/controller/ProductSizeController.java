@@ -38,6 +38,17 @@ public class ProductSizeController {
         return psService.getProductSizeByProductId(ma);
     }
 
+
+    @GetMapping("/list/ten-product-size")
+    public List<ProductSize> listProductSize(@RequestParam int i){
+        return psService.getProductSizeFromIndex(i);
+    }
+
+    @GetMapping("/list/product-size-by-product-name")
+    public List<ProductSize> listProductSizeByProductName(@RequestParam String productname){
+        return psService.getProductSizeByProductName(productname);
+    }
+
     @PostMapping("/add/product-size")
     public ResponseEntity<Object> AddProductGroup(@RequestBody CreateProductSize cpSize){
         psService.addProductSize(cpSize);

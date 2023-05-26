@@ -4,6 +4,88 @@
     background-color: #f1f1f1;
 }
 
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes showNotifyGrowth{
+    from{
+        opacity: 0;
+        transform: scale(0);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.modal-content{
+    background-color: white;
+    width: 300px;
+    height: 130px;
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    border-radius: 4px;
+    animation: showNotifyGrowth ease-in 0.2s;
+
+}
+
+.delete-title{
+    margin: 30px 0 25px 0;
+    font-weight: 550;
+}
+
+.btn-confirm{
+    margin-right: 20px;
+    width: 80px;
+    height: 30px;
+    font-weight: 550;
+    font-size: 15px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    
+}
+
+.btn-cancel{
+    width: 80px;
+    height: 30px;
+    margin-left: 20px;
+    font-weight: 550;
+    font-size: 15px;
+    background-color: #303030;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn-x{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background-color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn-icon{
+
+}
+
+
+
+
 
 .cart-contain{
     width: 100%;
@@ -50,7 +132,8 @@
 }
 
 .infor-color{
-    margin-left: 20px;
+    margin-left: 15px;
+    margin-right: 10px;
 }
 
 .size-select,
@@ -59,6 +142,7 @@
     height: 40px;
     font-size: 18px;
     border: solid 1px #ccc;
+    border-radius: 4px;
 }
 
 .name-sl{
@@ -73,6 +157,7 @@
     margin-top: 44px;
     border: 1px solid #ccc;
     height: 40px;
+    border-radius: 4px;
 }
 
 .input-sl{
@@ -86,5 +171,157 @@
     height: 28px;
     width: 25px;
     margin: 0 2px;
-    border-radius: 4px
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.total-item{
+    color: var(--primary-color);
+    font-size: 22px;
+    font-weight: 550;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.status{
+    margin-left: 52px;
+    margin-top: 30px;
+    color: #ed1c24;
+}
+
+.delete-item{
+    width: 122px;
+    height: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+    margin-left: 50px;
+    background-color: #303030;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-icon{
+    font-size: 25px;
+    color: white;
+}
+
+
+// check-out
+
+.checkout-contain{
+    height: 490px;
+    width: 420px;
+    background-color: white;
+    margin-left: 20px;
+    border-radius: 4px;
+    position: relative;
+}
+
+
+.checkout-title{
+    padding: 20px 20px;
+    margin-bottom: 0;
+    font-size: 24px;
+}
+
+.checkout-discount-name{
+    margin-left: 22px;
+    font-weight: 550;
+}
+
+.input-checkout{
+    display: inline-block;
+    margin-bottom: 20px;
+    outline: none;
+    border: solid 1px #ccc;
+    padding-left: 15px;
+    font-size: 20px;
+    border-radius: 2px;
+    width: 280px;
+    height: 42px;
+    margin-left: 22px;
+    margin-bottom: 15px;
+}
+
+.btn-discount{
+    height: 42px;
+    width: 100px;
+    margin-bottom: 1px;
+    padding-top: 6px;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 550;
+    font-size: 15px;
+}
+
+.infor-bill{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 22px;
+}
+
+.bill-title{
+}
+
+.bill-title-name{
+    color: #808080;
+    font-weight: 550;
+}
+
+.bill-title-discount{
+    color: #808080;
+    font-weight: 550;
+}
+
+.bill-value-contain{
+
+}
+
+.bill-value{
+    color: #808080;
+    font-weight: 550;
+    margin-right: 16px;
+}
+
+.bill-discount{
+    color: #808080;
+    font-weight: 550;
+    margin-left: 50px;
+}
+
+.total{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 22px;
+}
+
+.total-name{
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.total-value{
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.checkout-submit{
+    margin-left: 68px;
+    margin-top: 30px;
+    width: 300px;
+    height: 70px;
+    color:white;
+    background-color: var(--primary-color);
+    font-size: 25px;
+    font-weight: 550px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+
+.checkout-submit:hover{
+    background-color: #ccc;
 }

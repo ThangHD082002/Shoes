@@ -3,6 +3,8 @@ package shoesbackend.com.shoesbackend.service.ServiceIpml;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import shoesbackend.com.shoesbackend.model.Color;
@@ -57,6 +59,17 @@ public class ProductSizeServiceImpl implements ProductSizeService{
     @Override
     public List<ProductSize> getProductSizeByProductId(int id) {
         return psRepository.findByProduct_id(id);
+    }
+
+    @Override
+    public List<ProductSize> getProductSizeFromIndex(int i) {
+        Pageable pageable = PageRequest.of(i, 10);
+        return psRepository.findProductSizesFromIndex(i, pageable);
+    }
+
+    @Override
+    public List<ProductSize> getProductSizeByProductName(String name) {
+        return psRepository.findByProductName(name);
     }
     
 }

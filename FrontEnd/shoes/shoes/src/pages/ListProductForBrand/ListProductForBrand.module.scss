@@ -98,7 +98,6 @@
 }
 
 
-
 .img-bought{
     width: 110px;
     height: 45px;
@@ -111,7 +110,7 @@
     justify-content: center;
     bottom: 6px;
     left: 45px;
-    background-color: #ce87ac;
+    background-color: var(--primary-color);
     z-index: 1;
     border-radius: 2px;
     

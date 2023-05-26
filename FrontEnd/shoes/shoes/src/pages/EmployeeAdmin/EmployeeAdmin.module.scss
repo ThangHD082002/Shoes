@@ -1,0 +1,322 @@
+.user-contain{
+    width: 95%;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.manager-contain{
+    padding-bottom: 30px;
+}
+
+.title-contain{
+    background-color: #fff;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-contain{
+    border: 1px solid #ccc;
+    margin-left: 18px;
+    width: 260px;
+    height:32px;
+    padding-left: 20px;
+    border-radius: 4px;
+}
+.search-icon{
+    margin-right: 12px;
+    margin-top: 8px;
+    color: #878a99;
+}
+.input-search{
+    font-size: 15px;
+}
+
+.date-start-contain{
+    background-color: #f3f6f9;
+    display: flex;
+    align-items: center;
+    height: 37px;
+    padding-left: 20px;
+    width: 230px;
+    border-radius: 4px;
+}
+.date-end-contain{
+    display: flex;
+    align-items: center;
+    background-color: #f3f6f9;
+    width: 230px;
+    height: 37px;
+    border-radius: 4px;
+    padding-left: 20px;
+}
+
+.date-text{
+    color: #878a99;
+    margin-right: 5px;
+}
+
+.input-search-date{
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #f3f6f9;
+}
+
+
+.add-manager{
+    width: 180px;
+    height: 40px;
+    background-color: #ecedf3;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    padding-left: 10px;
+    margin-right: 15px;
+    color: #4073b5;
+}
+
+.add-manager:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.table-contain{
+    width: 100%;
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+table{
+    width: 100%;
+    margin-left: 0px;
+    border: 1px solid #f0f4f8;
+}
+
+table th,
+table td{
+    padding: 15px 30px;
+    text-align: left;
+}
+
+table th{
+    color: #364D67;
+    font-weight: 600;
+    background-color: #f1f7fd;
+}
+
+table tbody tr{
+    border-top: 1px solid #f0f4f8;
+
+}
+
+.thang{
+        margin: 0 ;
+        display: block;
+        background-color: #e6f7f5;
+        width: 100px;
+        border-radius:  4px;
+        color: #0ab39c;
+        font-size: 12px;
+        font-weight: 550;
+        padding-left: 10px;
+}
+
+.ani{
+    width: 55px; 
+    height: 55px;
+    
+}
+
+.role{
+    font-size: 12px;
+}
+
+// add employee
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes showNotifyGrowth{
+    from{
+        opacity: 0;
+        transform: scale(0);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.login-container {
+    width: 450px;
+    height: 620px;
+    margin: auto;
+    background-color: white;
+    z-index: 1;
+    font-size: 18px;
+    border-radius: 8px;
+    animation: showNotifyGrowth ease-in 0.1s;
+}
+
+.btn-x{
+    margin-left: 415px;
+    margin-top: 5px;
+    background-color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn-x:hover{
+    opacity: 0.5;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 0;
+}
+
+.login-header{
+    
+}
+.title{
+    text-align: center;
+    color: #3f5289;
+    margin-bottom: 0;
+    margin-right: 15px;
+}
+.title-icon{
+    display: flex;
+    margin-left: 140px;
+}
+
+.icon-face,
+.icon-google,
+.icon-linked{
+    border: 1px solid #f0f0f0;
+    width: 40px;
+    display: flex;
+    justify-content:center;
+    padding: 10px 0;
+    border-radius: 50%;
+}
+
+.icon-face{
+    margin: 0 10px;
+}
+.icon-google{
+    margin: 0 10px;
+}
+.icon-linked{
+    margin: 0 10px;
+}
+
+.text-enter{
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.login-body{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-email,
+.input-password,
+.input-phone{
+    width: 280px;
+    height: 38px;
+    margin-left: 80px;
+    padding-left: 20px;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    background-color: #f0f0f0;
+    color: #a8a8a8;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.input-email{
+    
+}
+.input-password{
+
+}
+.sign-up-contain{
+    display: flex;
+    flex-direction: row;
+}
+.sign-up-note{
+    margin-left: 85px;
+    margin-bottom: 6px;
+}
+
+
+.input-empty{
+    color: red;
+    margin-left: 82px;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+
+
+.sucess-register{
+    color: green;
+    margin-left: 95px;
+}
+
+.faild-register{
+    color: red;
+    margin: 0 50px 0 60px;
+}
+
+.gender-contain{
+    margin-left:136px;
+    margin-top: 10px;
+}
+
+.male{
+    margin-right: 40px;
+    margin-left: 10px;
+}
+
+.checkbox{
+    margin-right: 5px;
+}
+
+.btn-add-manager{
+    display: block;
+    margin-left: 160px;
+    margin-top: 20px;
+    width: 130px;
+    height: 45px;
+    border-radius: 2px;
+    background-color: #3f5289;
+    color: white;
+    font-weight:550;
+
+
+}
+
+
+// .helo{
+//     color: red;
+// }

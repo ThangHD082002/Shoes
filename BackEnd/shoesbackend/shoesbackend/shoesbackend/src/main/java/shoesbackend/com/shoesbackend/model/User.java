@@ -1,5 +1,6 @@
 package shoesbackend.com.shoesbackend.model;
 
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.List;
 import java.util.Set;
@@ -17,6 +18,7 @@ import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.MapsId;
 import jakarta.persistence.OneToMany;
+import jakarta.persistence.PrePersist;
 import jakarta.persistence.Table;
 import jakarta.persistence.Temporal;
 import jakarta.persistence.TemporalType;
@@ -42,6 +44,14 @@ public class User {
     @JsonIgnore
     private String hash_pass;
 
+    @Column(name = "status")
+    private StatusUser su;
+
+    @Column(name = "gender")
+    private String gender;
+
+    @Column(name = "phone")
+    private String phone;
 
     @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinTable(name = "user_role", 
@@ -57,4 +67,14 @@ public class User {
     @OneToMany(mappedBy = "user")
     @JsonIgnore
     private List<OrderDetail> ordersDetails;
+
+    @Column(name = "date_create")
+    private LocalDate dateCreated;
+
+    @PrePersist
+    public void createAt(){
+        this.dateCreated = LocalDate.now();
+    }
+
+
 }

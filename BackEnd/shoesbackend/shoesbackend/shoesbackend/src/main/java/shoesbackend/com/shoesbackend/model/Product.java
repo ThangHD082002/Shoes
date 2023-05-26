@@ -61,16 +61,4 @@ public class Product {
     @JsonIgnore
     private List<OrderDetail> orderDetails;
 
-
-
- 
-    // @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    // @JoinTable(name = "product_size", 
-    // joinColumns = @JoinColumn(name = "product_id"), 
-    // inverseJoinColumns = @JoinColumn(name = "size_id"))
-    // private Set<Size> productSizes; 
-
-
-    
-    
 }

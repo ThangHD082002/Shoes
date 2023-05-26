@@ -8,6 +8,8 @@ import shoesbackend.com.shoesbackend.service.UserService;
 
 import java.security.NoSuchAlgorithmException;
 import java.security.spec.InvalidKeySpecException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 
@@ -43,15 +45,16 @@ public class AuthenticationController {
     @RequestMapping(value = "/login", method = RequestMethod.POST)
 
     public ApiResponse<AuthToken> register(@RequestBody LoginUser lUser) throws AuthenticationException, NoSuchAlgorithmException, InvalidKeySpecException {
+        List<Role> s = new ArrayList<>();
         int check = userService.checkUser(lUser);
         System.out.println(check);
         if(check == 1){
             final User user = userService.getUserByUsername(lUser.getUsername());
             final String token = jwtTokenUtil.generateToken(user);
             System.out.println(token);
-            return new ApiResponse<>(404, "creatae token success",new AuthToken(token, user.getUsername()));
+            return new ApiResponse<>(404, "creatae token success",new AuthToken(token, user.getUsername(), user.getRoles()));
         }
-        return new ApiResponse<>(200, "create token faild",new AuthToken("",""));
+        return new ApiResponse<>(200, "create token faild",new AuthToken("","",s));
     }
 
 

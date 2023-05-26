@@ -1,0 +1,152 @@
+.user-contain{
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+
+.manager-contain{
+    padding-bottom: 30px;
+}
+
+.title-contain{
+    background-color: #fff;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-contain{
+    border: 1px solid #ccc;
+    margin-left: 18px;
+    width: 260px;
+    height:32px;
+    padding-left: 20px;
+    border-radius: 4px;
+}
+.search-icon{
+    margin-right: 12px;
+    margin-top: 8px;
+    color: #878a99;
+}
+.input-search{
+    font-size: 15px;
+}
+
+.date-start-contain{
+    background-color: #f3f6f9;
+    display: flex;
+    align-items: center;
+    height: 37px;
+    padding-left: 20px;
+    width: 230px;
+    border-radius: 4px;
+}
+.date-end-contain{
+    display: flex;
+    align-items: center;
+    background-color: #f3f6f9;
+    width: 230px;
+    height: 37px;
+    border-radius: 4px;
+    padding-left: 20px;
+}
+
+.date-text{
+    color: #878a99;
+    margin-right: 5px;
+}
+
+.input-search-date{
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #f3f6f9;
+}
+
+
+.add-manager{
+    width: 180px;
+    height: 40px;
+    background-color: #ecedf3;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    padding-left: 10px;
+    margin-right: 15px;
+    color: #4073b5;
+}
+
+.table-contain{
+    width: 100%;
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+table{
+    width: 100%;
+    margin-left: 0px;
+    border: 1px solid #f0f4f8;
+}
+
+table th,
+table td{
+    padding: 15px 30px;
+    text-align: left;
+}
+
+table th{
+    color: #364D67;
+    font-weight: 600;
+    background-color: #f1f7fd;
+}
+
+table tbody tr{
+    border-top: 1px solid #f0f4f8;
+
+}
+
+.thang{
+        margin: 0 ;
+        display: block;
+        background-color: #e6f7f5;
+        width: 100px;
+        border-radius:  4px;
+        color: #0ab39c;
+        font-size: 12px;
+        font-weight: 550;
+        padding-left: 10px;
+}
+
+.ani{
+    width: 55px; 
+    height: 55px;
+    
+}
+
+.role{
+    font-size: 12px;
+}
+
+.item-page{
+    margin: 5px 10px;
+}
+
+
+.page{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.btn-page{
+    width: 40px;
+    height: 40px;
+    background-color: #eaf1fe;
+    border-radius: 8px;
+    font-weight: 550;
+    cursor: pointer;
+}
+
+.btn-page:hover{
+    opacity: 0.5;
+}

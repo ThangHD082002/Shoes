@@ -1,0 +1,239 @@
+.checkout-infor{
+    width: 100%;
+    height: 100%;
+    background-color: #f3f3f9;
+    position: relative;
+}
+
+.checkout-contain{
+    height: 490px;
+    width: 420px;
+    background-color: white;
+    margin-left: 20px;
+    border-radius: 4px;
+    position: relative;
+}
+
+
+.checkout-title{
+    padding: 20px 20px;
+    margin-bottom: 0;
+    font-size: 24px;
+}
+
+.checkout-discount-name{
+    margin-left: 22px;
+    font-weight: 550;
+}
+
+.input-checkout{
+    display: inline-block;
+    margin-bottom: 20px;
+    outline: none;
+    border: solid 1px #ccc;
+    padding-left: 15px;
+    font-size: 20px;
+    border-radius: 2px;
+    width: 280px;
+    height: 42px;
+    margin-left: 22px;
+    margin-bottom: 15px;
+}
+
+.btn-discount{
+    height: 42px;
+    width: 100px;
+    margin-bottom: 1px;
+    padding-top: 6px;
+    background-color: red;
+    color: white;
+    font-weight: 550;
+    font-size: 15px;
+}
+
+.infor-bill{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 22px;
+}
+
+.bill-title{
+}
+
+.bill-title-name{
+    color: #808080;
+    font-weight: 550;
+}
+
+.bill-title-discount{
+    color: #808080;
+    font-weight: 550;
+}
+
+.bill-value-contain{
+
+}
+
+.bill-value{
+    color: #808080;
+    font-weight: 550;
+    margin-right: 16px;
+}
+
+.bill-discount{
+    color: #808080;
+    font-weight: 550;
+    margin-left: 50px;
+}
+
+.total{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 22px;
+}
+
+.total-name{
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.total-value{
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.checkout-submit{
+    margin-left: 68px;
+    margin-top: 30px;
+    width: 300px;
+    height: 70px;
+    color:white;
+    background-color: red;
+    font-size: 25px;
+    font-weight: 550px;
+    border-radius: 2px;
+}
+
+.checkout-submit:hover{
+    background-color: #ccc;
+}
+
+// infor
+
+.infor-title-name{
+    margin-bottom: 12px;
+}
+
+.infor-row{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    height: 560px;
+    border-radius: 4px;
+    margin-bottom: 50px;
+}
+
+.infor-name-phone,
+.infor-email-address
+{
+    margin-left:20px;
+}
+
+.infor-name-phone{
+}
+
+.infor-email-address{
+
+}
+
+.infor-name{
+
+}
+
+.infor-name-text,
+.infor-phone-text,
+.infor-emai-text,
+.infor-address-text{
+    font-weight: 550;
+}
+
+.infor-name-text{
+
+}
+
+.name-input,
+.phone-input,
+.address-input,
+.email-input{
+    display: block;
+    margin-bottom: 20px;
+    outline: none;
+    border: solid 1px #ced4da;
+    padding-left: 15px;
+    font-size: 20px;
+    border-radius: 4px;
+    width: 360px;
+    height: 42px;
+    margin-left: 0px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.infor-phone{
+
+}
+
+.infor-phone-text{
+
+}
+
+.phone-input{
+
+}
+
+.img-checkout{
+    width: 400px;
+}
+
+.input-empty{
+    color: red;
+    margin-left: 5px;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+@keyframes showNotifyGrowth{
+    from{
+        opacity: 0;
+        transform: scale(0);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.notify-success{
+    background-color: #fff;
+    width: 360px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 4%;
+    left: 38%;
+    padding-top: 15px;
+    font-weight: 550;
+    padding-left: 10px;
+    border-radius: 8px;
+    color: #0ab39c;
+    box-shadow:  0 5px 10px #1e20251f;
+    animation: showNotifyGrowth ease-in 0.2s;
+
+
+}
+
+.success-name{
+    margin-bottom: 30px;
+}

@@ -39,4 +39,8 @@ public class Size {
     @OneToMany(cascade = CascadeType.ALL,mappedBy = "size")
     @JsonIgnore
     private List<ProductSize> productSizes ;
+
+    @OneToMany(cascade = CascadeType.ALL,mappedBy = "size")
+    @JsonIgnore
+    private List<OrderDetail> orderDetails ;
 }

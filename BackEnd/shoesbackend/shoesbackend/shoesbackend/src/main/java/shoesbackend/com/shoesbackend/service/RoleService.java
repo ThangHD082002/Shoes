@@ -2,6 +2,7 @@ package shoesbackend.com.shoesbackend.service;
 
 import java.util.List;
 
+import shoesbackend.com.shoesbackend.model.Product;
 import shoesbackend.com.shoesbackend.model.Role;
 
 public interface RoleService {
@@ -9,4 +10,5 @@ public interface RoleService {
     Role saveRole(Role role);
     boolean deleteRoleByName(String name);
     Role getRoleByName(String name);
+    
 }
