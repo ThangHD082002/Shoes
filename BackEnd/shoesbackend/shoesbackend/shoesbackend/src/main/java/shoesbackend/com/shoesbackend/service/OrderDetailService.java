@@ -13,4 +13,5 @@ public interface OrderDetailService {
     List<OrderDetail> getOrderDetailsByUserName(String userName);
     void UpdateStatusOrderDetail(StatusOrderDetail sod, int id);
     OrderDetail getOdeOrderDetailById(int id);
+    List<OrderDetail> getOrderDetailsByUserNameCustomer(String userName);
 }

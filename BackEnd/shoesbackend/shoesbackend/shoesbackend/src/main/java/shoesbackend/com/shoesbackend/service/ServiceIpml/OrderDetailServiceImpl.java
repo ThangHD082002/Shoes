@@ -114,6 +114,12 @@ public class OrderDetailServiceImpl implements OrderDetailService{
     }
 
 
+    @Override
+    public List<OrderDetail> getOrderDetailsByUserNameCustomer(String userName) {
+        return odRepository.findByUserName(userName);
+    }
+
+
     // @Override
     // public void UpdateStatusOrderDetail(StatusOrderDetail sod, int id) {
     //     // TODO Auto-generated method stub

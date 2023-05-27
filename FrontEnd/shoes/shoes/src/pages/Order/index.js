@@ -28,7 +28,7 @@ function Order(){
 
         var input = localStorage.getItem("username");
     
-          request.getOrderDetailByUsername("list/order-detail-by-username", {
+          request.getOrderDetailByUsername("http://localhost:8080/list/order-detail-by-username-customer", {
               headers: {
                 Authorization: `Bearer ${varToken}`},
                 params: {

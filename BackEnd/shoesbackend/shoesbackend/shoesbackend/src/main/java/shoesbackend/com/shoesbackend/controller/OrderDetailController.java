@@ -37,6 +37,11 @@ public class OrderDetailController {
         return odService.getOrderDetailsByUserName(userName);
     }
 
+    @GetMapping("/list/order-detail-by-username-customer")
+    public List<OrderDetail> getOrderDetailListByUsernameCustomer(@RequestParam String userName){
+        return odService.getOrderDetailsByUserNameCustomer(userName);
+    }
+
     @GetMapping("/oders-detail-by-id")
     public OrderDetail getOrderDetailListById(@RequestParam int id){
         return odService.getOdeOrderDetailById(id);

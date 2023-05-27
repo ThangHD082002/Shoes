@@ -30,18 +30,22 @@
 
 .modal-content{
     background-color: white;
-    width: 300px;
-    height: 130px;
+    width: 350px;
+    height: 210px;
     position: absolute;
-    top: 40%;
+    top: 30%;
     text-align: center;
     border-radius: 4px;
     animation: showNotifyGrowth ease-in 0.2s;
 
 }
 
+.svg{
+    margin-left: 14px;
+}
+
 .delete-title{
-    margin: 30px 0 25px 0;
+    margin: 0px 0 25px 0;
     font-weight: 550;
 }
 
@@ -51,7 +55,7 @@
     height: 30px;
     font-weight: 550;
     font-size: 15px;
-    background-color: var(--primary-color);
+    background-color: #0ab39c;
     color: #fff;
     border-radius: 3px;
     cursor: pointer;
@@ -318,6 +322,37 @@
     font-size: 25px;
     font-weight: 550px;
     border-radius: 2px;
+    cursor: pointer;
+}
+
+.checkout-condition{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.modal-content-check{
+    background-color: white;
+    width: 350px;
+    height: 200px;
+    position: absolute;
+    top: 20%;
+    text-align: center;
+    border-radius: 4px;
+    animation: showNotifyGrowth ease-in 0.2s;
+    padding-right: 10px;
+}
+
+.btn-login{
+    margin-left: 10px;
+    width: 150px;
+    height: 40px;
+    font-weight: 550;
+    font-size: 15px;
+    background-color: #0ab39c;
+    color: #fff;
+    border-radius: 3px;
     cursor: pointer;
 }
 
